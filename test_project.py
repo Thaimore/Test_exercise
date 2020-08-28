@@ -88,6 +88,7 @@ def main(path, number, step, save=False):
         except FileExistsError:
             with open('logs_errors.txt', mode='a') as file:
                 file.write(to_write)
+    return action
 
 
 if __name__ == '__main__':
