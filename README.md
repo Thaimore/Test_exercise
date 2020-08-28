@@ -10,7 +10,7 @@ Your_password и test_database необходимо заменить.
 
     $ python3 test_project.py -s [path to file] [phone number] [step]
     
-Флаг необязателен, может быть использован в любом порядке.
+Флаг отвечает за запись в БД, необязателен.
 
 После запуска скрипт просит ввести API_KEY и SECRET_KEY.
 
