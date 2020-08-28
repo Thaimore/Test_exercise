@@ -42,7 +42,6 @@ args = parser.parse_args()
 def main(path, number, step, save=False):
     try:
         # Step 1: получаем аргументы из командной строки и расшифровываем файл
-        print(path, number, step, save)
         recognize = client.recognize('{}'.format(path), audio_config)
         duration = float(recognize[0]['end_time'][:-1])
         text = recognize[0]['alternatives'][0]['transcript'].lower()
